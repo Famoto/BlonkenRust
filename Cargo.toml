@@ -1,0 +1,21 @@
+[package]
+name = "blonken_rust"
+version = "0.1.0"
+edition = "2024"
+resolver = "2"
+rust-version = "1.85"
+
+[dependencies]
+anyhow = "1"
+esp-idf-hal = "0.46.2"
+esp-idf-svc = "0.52.1"
+
+[build-dependencies]
+embuild = "0.33"
+
+[profile.dev]
+debug = true
+opt-level = "z"
+
+[profile.release]
+opt-level = "s"
