@@ -1,8 +1,10 @@
 mod app;
+mod button;
 mod color;
 mod digitus16;
 mod font;
 mod light_sensor;
+mod temperature;
 
 use anyhow::Result;
 use app::App;
